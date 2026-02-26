@@ -1,0 +1,40 @@
+# Core dependencies
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.40.0
+accelerate>=0.27.0
+
+# OpenAI (modular agent LLM + evaluation)
+openai>=1.0.0
+
+# Google Gemini (audio quality evaluation)
+google-genai>=0.4.0
+
+# Speech recognition (modular agent ASR)
+openai-whisper>=20231117
+
+# Text-to-speech (user simulator + modular agent)
+# Install sesame/csm-1b from HuggingFace: https://huggingface.co/sesame/csm-1b
+# The CsmForConditionalGeneration class requires transformers >= 4.50.0
+datasets>=2.14.0
+soundfile>=0.12.0
+librosa>=0.10.0
+
+# Audio processing
+pydub>=0.25.1
+
+# MiMo-Audio (E2E model)
+# Clone MiMo-Audio repo alongside AudioConv:
+#   git clone https://github.com/XiaomiMiMo/MiMo-Audio.git
+# Then install its dependencies:
+#   pip install -r MiMo-Audio/requirements.txt
+packaging>=21.0
+
+# Quantization (for 4-bit inference of Qwen Omni and MiMo)
+bitsandbytes>=0.41.0
+
+# Progress bars
+tqdm>=4.64.0
+
+# Packaging utilities
+packaging>=21.0
